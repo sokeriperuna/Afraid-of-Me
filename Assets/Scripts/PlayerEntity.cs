@@ -23,13 +23,18 @@ public class PlayerEntity : MonoBehaviour {
         rb.MovePosition (rb.position + velocity * Time.fixedDeltaTime);
     }
 
-    public void TurnToward(Vector3 mousePosition, float turnSpeed)
+    Quaternion CalculateLookRotation(Vector3 mousePositionInWorld)
     {
-        float angle = Mathf.Atan(mousePosition.x / mousePosition.y) * Mathf.Rad2Deg;
-        Debug.Log(angle.ToString());
-        
-        
-        Debug.DrawLine(transform.position, mousePosition);
+        float angleToMouse = Vector2.SignedAngle(transform.up, mousePositionInWorld - transform.position);
+
+        Quaternion lookRotation = new Quaternion();
+        lookRotation.eulerAngles = new Vector3(0f, 0f, transform.rotation.eulerAngles.z + angleToMouse);
+        return lookRotation;
+    }
+
+    public void TurnToward(Vector3 mousePositionInWorld, float turnSpeed)
+    {
+        transform.rotation = CalculateLookRotation(mousePositionInWorld);
     }
 
 }
