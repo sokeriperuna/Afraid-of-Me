@@ -136,7 +136,7 @@ Rigidbody2D:
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 0
-  m_Constraints: 0
+  m_Constraints: 4
 --- !u!58 &58795342808453152
 CircleCollider2D:
   m_ObjectHideFlags: 1
@@ -163,8 +163,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b17527ae74dccc342b27447c87b03175, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  moveSpeed: 5
-  turnSpeed: 5
 --- !u!114 &114223442022195872
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -176,7 +174,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2328cca7870d7ed4288d5bb7031856b1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  viewRadius: 15
+  viewRadius: 5
   viewAngle: 110
   targetMask:
     serializedVersion: 2
@@ -184,8 +182,9 @@ MonoBehaviour:
   obstacleMask:
     serializedVersion: 2
     m_Bits: 512
-  visibleTargets: []
-  meshResolution: 0.1
+  visibleTargets:
+  - {fileID: 0}
+  meshResolution: 1
   viewMeshFilter: {fileID: 33819223972370996}
 --- !u!114 &114317043314619120
 MonoBehaviour:
@@ -198,6 +197,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9ded6da7ced00eb4ca21ad3505f2b42a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moveSpeed: 0
 --- !u!212 &212349067562095916
 SpriteRenderer:
   m_ObjectHideFlags: 1

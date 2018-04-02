@@ -180,6 +180,11 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 114223442022195872, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
+        type: 2}
+      propertyPath: visibleTargets.Array.size
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4164022876019922, guid: 3793c1593a7d3194396e6bf6b4e3d18e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -214,8 +219,42 @@ Prefab:
       objectReference: {fileID: 0}
     - target: {fileID: 114223442022195872, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
         type: 2}
+      propertyPath: visibleTargets.Array.data[0]
+      value: 
+      objectReference: {fileID: 324582828}
+    - target: {fileID: 4164022876019922, guid: 3793c1593a7d3194396e6bf6b4e3d18e, type: 2}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 114317043314619120, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
+        type: 2}
+      propertyPath: moveSpeed
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114223442022195872, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
+        type: 2}
       propertyPath: meshResolution
-      value: 1
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 23792348776238564, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
+        type: 2}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 2834a701633da8a4e81c672f3308d269, type: 2}
+    - target: {fileID: 114223442022195872, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
+        type: 2}
+      propertyPath: edgeResolveIterations
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 114223442022195872, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
+        type: 2}
+      propertyPath: edgeDstThereshold
+      value: 0.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 114223442022195872, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
+        type: 2}
+      propertyPath: viewRadius
+      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3793c1593a7d3194396e6bf6b4e3d18e, type: 2}

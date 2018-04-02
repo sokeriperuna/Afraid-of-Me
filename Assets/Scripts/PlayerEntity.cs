@@ -8,12 +8,14 @@ public class PlayerEntity : MonoBehaviour {
     private Rigidbody2D rb;
     private Vector2 velocity;
 
+    public float moveSpeed;
+
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void CalculateVelocity(Vector3 input, float moveSpeed)
+    public void CalculateVelocity(Vector3 input)
     {
         velocity = input.normalized * moveSpeed;
     }
@@ -32,7 +34,7 @@ public class PlayerEntity : MonoBehaviour {
         return lookRotation;
     }
 
-    public void TurnToward(Vector3 mousePositionInWorld, float turnSpeed)
+    public void TurnToward(Vector3 mousePositionInWorld)
     {
         transform.rotation = CalculateLookRotation(mousePositionInWorld);
     }
