@@ -14,9 +14,11 @@ public class FieldOfView : MonoBehaviour {
     [HideInInspector]
     public List<Transform> visibleTargets = new List<Transform>();
 
-    const float meshResolution        = 5;
-    const int   edgeResolveIterations = 4;
+    const float meshResolution        = 8;
+    const int   edgeResolveIterations = 5;
     const float edgeDstThereshold     = 0.5f;
+
+    public float maskCutawayDst = 0.1f;
 
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
@@ -106,7 +108,7 @@ public class FieldOfView : MonoBehaviour {
         vertices[0] = Vector3.zero;
         for (int i = 0; i < vertexCount - 1; i++)
         {
-            vertices[i + 1] = transform.InverseTransformPoint(viewPoints[i]);
+            vertices[i + 1] = transform.InverseTransformPoint(viewPoints[i] + (viewPoints[i] - transform.position).normalized * maskCutawayDst);
 
             if(i < vertexCount - 2)
             {

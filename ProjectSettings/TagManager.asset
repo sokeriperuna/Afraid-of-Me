@@ -15,7 +15,7 @@ TagManager:
   - 
   - Target
   - Obstacle
-  - 
+  - Unselectable
   - 
   - 
   - 
@@ -38,6 +38,15 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: Floor
+    uniqueID: 77628663
+    locked: 0
+  - name: Walls
+    uniqueID: 2247860613
+    locked: 0
+  - name: Player
+    uniqueID: 3873245605
+    locked: 0
   - name: Default
     uniqueID: 0
     locked: 0
