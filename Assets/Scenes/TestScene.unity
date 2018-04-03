@@ -180,11 +180,6 @@ Prefab:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 114223442022195872, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
-        type: 2}
-      propertyPath: visibleTargets.Array.size
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 4164022876019922, guid: 3793c1593a7d3194396e6bf6b4e3d18e, type: 2}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -216,45 +211,6 @@ Prefab:
     - target: {fileID: 4164022876019922, guid: 3793c1593a7d3194396e6bf6b4e3d18e, type: 2}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 114223442022195872, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
-        type: 2}
-      propertyPath: visibleTargets.Array.data[0]
-      value: 
-      objectReference: {fileID: 324582828}
-    - target: {fileID: 4164022876019922, guid: 3793c1593a7d3194396e6bf6b4e3d18e, type: 2}
-      propertyPath: m_LocalEulerAnglesHint.z
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 114317043314619120, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
-        type: 2}
-      propertyPath: moveSpeed
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114223442022195872, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
-        type: 2}
-      propertyPath: meshResolution
-      value: 5
-      objectReference: {fileID: 0}
-    - target: {fileID: 23792348776238564, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
-        type: 2}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 2834a701633da8a4e81c672f3308d269, type: 2}
-    - target: {fileID: 114223442022195872, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
-        type: 2}
-      propertyPath: edgeResolveIterations
-      value: 4
-      objectReference: {fileID: 0}
-    - target: {fileID: 114223442022195872, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
-        type: 2}
-      propertyPath: edgeDstThereshold
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 114223442022195872, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
-        type: 2}
-      propertyPath: viewRadius
-      value: 10
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_ParentPrefab: {fileID: 100100000, guid: 3793c1593a7d3194396e6bf6b4e3d18e, type: 2}
@@ -420,8 +376,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 43672017812620d4e80f3f6d4726a130, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  target: {fileID: 1398077153}
-  cameraSmoothing: 0.4
+  target: {fileID: 0}
+  cameraSmoothing: 0
 --- !u!4 &866678058 stripped
 Transform:
   m_PrefabParentObject: {fileID: 4670384977556824, guid: 314531d71ef020d45a6e419a18797ff5,
@@ -795,11 +751,6 @@ SpriteRenderer:
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
---- !u!4 &1398077153 stripped
-Transform:
-  m_PrefabParentObject: {fileID: 4164022876019922, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
-    type: 2}
-  m_PrefabInternal: {fileID: 629629486}
 --- !u!1 &1671256029
 GameObject:
   m_ObjectHideFlags: 0

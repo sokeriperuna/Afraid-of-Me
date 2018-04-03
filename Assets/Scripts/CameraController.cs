@@ -7,16 +7,15 @@ public class CameraController : MonoBehaviour {
     private Vector3 velocity;
 
     public Transform target;
-    public float cameraSmoothing;
 
-    void Track(Transform targetTransform, float trackingSmoothing)
+    void Track(Transform target)
     {
-        transform.position = Vector3.SmoothDamp(transform.position, new Vector3(targetTransform.position.x, targetTransform.position.y, transform.position.z), ref velocity, trackingSmoothing);
+        transform.position = new Vector3(target.position.x, target.position.y, transform.position.z);
     }
 
-    private void Update()
+    private void LateUpdate()
     {
         if (target != null)
-            Track(target, cameraSmoothing);
+            Track(target);
     }
 }

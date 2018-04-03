@@ -6,37 +6,40 @@ using UnityEngine;
 public class PlayerEntity : MonoBehaviour {
 
     private Rigidbody2D rb;
-    private Vector2 velocity;
+    private Vector2 moveVelocity;
+    private Vector3 turnVelocity;
 
     public float moveSpeed;
+    public float turnSpeed;
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
     }
 
-    public void CalculateVelocity(Vector3 input)
+    public void CalculateMoveVelocity(Vector3 input)
     {
-        velocity = input.normalized * moveSpeed;
+        moveVelocity = input.normalized * moveSpeed;
     }
 
     public void Move()
     {
-        rb.MovePosition (rb.position + velocity * Time.fixedDeltaTime);
+        rb.MovePosition (rb.position + moveVelocity * Time.fixedDeltaTime);
     }
 
     Quaternion CalculateLookRotation(Vector3 mousePositionInWorld)
     {
         float angleToMouse = Vector2.SignedAngle(transform.up, mousePositionInWorld - transform.position);
-
         Quaternion lookRotation = new Quaternion();
         lookRotation.eulerAngles = new Vector3(0f, 0f, transform.rotation.eulerAngles.z + angleToMouse);
         return lookRotation;
     }
 
-    public void TurnToward(Vector3 mousePositionInWorld)
+    public void TurnToward(Vector3 target)
     {
-        transform.rotation = CalculateLookRotation(mousePositionInWorld);
+        Quaternion newRotation = new Quaternion();
+        newRotation.eulerAngles = new Vector3(0f, 0f, rb.rotation + Vector2.SignedAngle(transform.up, target - transform.position) * turnSpeed * Time.fixedDeltaTime);
+        transform.rotation = newRotation;
     }
 
 }

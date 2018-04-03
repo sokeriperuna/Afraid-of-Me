@@ -14,9 +14,9 @@ public class FieldOfView : MonoBehaviour {
     [HideInInspector]
     public List<Transform> visibleTargets = new List<Transform>();
 
-    public float meshResolution;
-    public int edgeResolveIterations;
-    public float edgeDstThereshold;
+    const float meshResolution        = 5;
+    const int   edgeResolveIterations = 4;
+    const float edgeDstThereshold     = 0.5f;
 
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
