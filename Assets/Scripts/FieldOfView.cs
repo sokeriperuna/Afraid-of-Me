@@ -178,7 +178,7 @@ public class FieldOfView : MonoBehaviour {
         public bool hit;
         public Vector3 point;
         public float dst;
-        public float angle;
+		public float angle;
 
         public ViewCastInfo(bool _hit, Vector3 _point, float _dst, float _angle)
         {
