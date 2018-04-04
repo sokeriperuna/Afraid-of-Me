@@ -183,7 +183,7 @@ MonoBehaviour:
     serializedVersion: 2
     m_Bits: 512
   visibleTargets: []
-  maskCutawayDst: 0.5
+  maskCutawayDst: 0.25
   viewMeshFilter: {fileID: 33819223972370996}
 --- !u!114 &114317043314619120
 MonoBehaviour:
@@ -197,7 +197,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moveSpeed: 5
-  turnSpeed: 10
+  turnSpeed: 15
 --- !u!212 &212349067562095916
 SpriteRenderer:
   m_ObjectHideFlags: 1
