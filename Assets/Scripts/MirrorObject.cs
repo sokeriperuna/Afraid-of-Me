@@ -2,15 +2,45 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class MirrorObject : MonoBehaviour {
+[System.Serializable]
+public struct MirrorPath
+{
+    public bool loops;
+    public Transform[] nodes;
+}
 
-	// Use this for initialization
-	void Start () {
-		
-	}
-	
-	// Update is called once per frame
-	void Update () {
-		
-	}
+public class MirrorObject : MonoBehaviour
+{
+
+    public bool moving;
+    public float moveSpeed;
+    public MirrorPath mirrorPath;
+
+    private float startTime;
+    private float journeyLength;
+    private int targetIndex;
+
+    private void Start()
+    {
+        targetIndex = 0;
+        startTime = Time.time;
+        if (mirrorPath.nodes != null && mirrorPath.nodes.Length >= 2)
+        {
+            journeyLength = Vector3.Distance(mirrorPath.nodes[0].position, mirrorPath.nodes[1].position);
+        }
+    }
+
+    public void FixedUpdate()
+    {
+        if (moving && mirrorPath.nodes.Length >= 2)
+        {
+            LerpTowardTarget(mirrorPath.nodes[targetIndex]);
+        }
+    }
+
+    void LerpTowardTarget(Transform target)
+    {
+
+
+    }
 }
