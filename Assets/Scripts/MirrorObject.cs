@@ -29,6 +29,7 @@ public class MirrorObject : MonoBehaviour
         if (mirrorPath.nodes != null && mirrorPath.nodes.Length >= 2)
         {
             journeyLength = Vector3.Distance(mirrorPath.nodes[0].position, mirrorPath.nodes[1].position);
+            transform.position = mirrorPath.nodes[0].position;
             currentIndex = 0;
             targetIndex  = 1;
         }
@@ -49,36 +50,45 @@ public class MirrorObject : MonoBehaviour
         transform.position = Vector3.Lerp(mirrorPath.nodes[currentIndex].position,
                                           mirrorPath.nodes[targetIndex].position, 
                                           fracJourney);
+        if (fracJourney >= 1f)
+            SetNextTarget();
     }
 
     void SetNextTarget()
     {
+        Debug.Log("SetNextTarget called!");
+
+        currentIndex = targetIndex;
         if (movingInPositiveDirection)
         {
-            currentIndex++;
             targetIndex++;
             if (targetIndex >= mirrorPath.nodes.Length)
+            {
                 if (mirrorPath.loops)
                     targetIndex = 0;
                 else
                 {
                     movingInPositiveDirection = false;
-                    targetIndex = currentIndex - 1;
+                    targetIndex = mirrorPath.nodes.Length - 2;
                 }
+            }
         }
         else
         {
-            currentIndex--;
             targetIndex--;
             if (targetIndex < 0)
+            {
                 if (mirrorPath.loops)
                     targetIndex = mirrorPath.nodes.Length - 1;
                 else
                 {
                     movingInPositiveDirection = true;
-                    targetIndex = currentIndex + 1;
+                    targetIndex = 2;
                 }
+            }
         }
+
+        journeyLength = Vector3.Distance(mirrorPath.nodes[currentIndex].position, mirrorPath.nodes[targetIndex].position);
     }
 
 }
