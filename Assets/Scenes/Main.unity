@@ -621,11 +621,16 @@ Prefab:
     - target: {fileID: 114559098919548378, guid: 5d48a8d2dbc16d141b7b2738bd3832c5,
         type: 2}
       propertyPath: movingInPositiveDirection
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 114559098919548378, guid: 5d48a8d2dbc16d141b7b2738bd3832c5,
         type: 2}
       propertyPath: moveSpeed
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 114559098919548378, guid: 5d48a8d2dbc16d141b7b2738bd3832c5,
+        type: 2}
+      propertyPath: mirrorPath.loops
       value: 1
       objectReference: {fileID: 0}
     m_RemovedComponents: []

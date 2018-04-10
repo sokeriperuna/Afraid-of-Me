@@ -16,8 +16,7 @@ public class MirrorObject : MonoBehaviour
     public float moveSpeed;
     public MirrorPath mirrorPath;
 
-    const bool movingInPositiveDirection = true;
-
+    private bool movingInPositiveDirection;
     private float startTime;
     private float journeyLength;
     private int currentIndex;
@@ -25,7 +24,7 @@ public class MirrorObject : MonoBehaviour
 
     private void Start()
     {
-
+        movingInPositiveDirection = true;
         startTime = Time.time;
         if (mirrorPath.nodes != null && mirrorPath.nodes.Length >= 2)
         {
@@ -60,32 +59,15 @@ public class MirrorObject : MonoBehaviour
         Debug.Log("SetNextTarget called!");
 
         currentIndex = targetIndex;
-        if (movingInPositiveDirection)
+        targetIndex++;
+        if (targetIndex >= mirrorPath.nodes.Length)
         {
-            targetIndex++;
-            if (targetIndex >= mirrorPath.nodes.Length)
+            if (mirrorPath.loops)
+                targetIndex = 0;
+            else
             {
-                if (mirrorPath.loops)
-                    targetIndex = 0;
-                else
-                {
-                    movingInPositiveDirection = false;
-                    targetIndex = mirrorPath.nodes.Length - 2;
-                }
-            }
-        }
-        else
-        {
-            targetIndex--;
-            if (targetIndex < 0)
-            {
-                if (mirrorPath.loops)
-                    targetIndex = mirrorPath.nodes.Length - 1;
-                else
-                {
-                    movingInPositiveDirection = true;
-                    targetIndex = 2;
-                }
+                movingInPositiveDirection = false;
+                targetIndex = mirrorPath.nodes.Length - 2;
             }
         }
 
