@@ -13,9 +13,10 @@ public class MirrorObject : MonoBehaviour
 {
 
     public bool moving;
-    public bool movingInPositiveDirection;
     public float moveSpeed;
     public MirrorPath mirrorPath;
+
+    const bool movingInPositiveDirection = true;
 
     private float startTime;
     private float journeyLength;
@@ -88,6 +89,7 @@ public class MirrorObject : MonoBehaviour
             }
         }
 
+        startTime = Time.time;
         journeyLength = Vector3.Distance(mirrorPath.nodes[currentIndex].position, mirrorPath.nodes[targetIndex].position);
     }
 
