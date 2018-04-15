@@ -56,8 +56,6 @@ public class MirrorObject : MonoBehaviour
 
     void SetNextTarget()
     {
-        Debug.Log("SetNextTarget called!");
-
         currentIndex = targetIndex;
         targetIndex++;
         if (targetIndex >= mirrorPath.nodes.Length)

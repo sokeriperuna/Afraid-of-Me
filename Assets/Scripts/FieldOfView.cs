@@ -4,6 +4,10 @@ using System.Collections.Generic;
 
 public class FieldOfView : MonoBehaviour {
 
+    const float meshResolution = 3;
+    const int edgeResolveIterations = 3;
+    const float edgeDstThereshold = 0.5f;
+
     public float viewRadius;
     [Range(0, 360)]
     public float viewAngle;
@@ -14,11 +18,10 @@ public class FieldOfView : MonoBehaviour {
     [HideInInspector]
     public List<Transform> visibleTargets = new List<Transform>();
 
-    const float meshResolution        = 5;
-    const int   edgeResolveIterations = 4;
-    const float edgeDstThereshold     = 0.5f;
-
     public float maskCutawayDst = 0.1f;
+
+    public delegate void FovDelgate();
+    public event FovDelgate targetsFound;
 
     public MeshFilter viewMeshFilter;
     Mesh viewMesh;
@@ -29,7 +32,7 @@ public class FieldOfView : MonoBehaviour {
         viewMesh = new Mesh();
         viewMesh.name = "View Mesh";
         viewMeshFilter.mesh = viewMesh;
-        StartCoroutine(FindTargetsWithDelay(0.2f));
+        StartCoroutine(FindTargetsWithDelay(0.05f));
         
     }
 
@@ -39,6 +42,8 @@ public class FieldOfView : MonoBehaviour {
         {
             yield return new WaitForSeconds(delay);
             FindVisibleTargets();
+            if (targetsFound != null)
+                targetsFound();
         }
     }
 

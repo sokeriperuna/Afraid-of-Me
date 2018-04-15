@@ -5,11 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-	void Start(){
+	void Awake(){
 		ExitTile.OnPlayerEnter += PlayerVictory;
+        PlayerEntity.playerFailure += PlayerFailure;
 	}
 
 	void PlayerVictory(){
-		SceneManager.LoadScene ("Main");
+		SceneManager.LoadScene("Main");
 	}
+
+    void PlayerFailure()
+    {
+        SceneManager.LoadScene("Main");
+    }
 }

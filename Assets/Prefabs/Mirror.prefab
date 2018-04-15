@@ -25,7 +25,7 @@ GameObject:
   - component: {fileID: 114559098919548378}
   m_Layer: 8
   m_Name: Mirror
-  m_TagString: Wall
+  m_TagString: Mirror
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -99,6 +99,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: dad0b9933d1b00249b1b73ca911e0a6b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  moving: 0
+  moveSpeed: 0
   mirrorPath:
     loops: 0
     nodes: []
