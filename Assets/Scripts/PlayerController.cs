@@ -17,16 +17,12 @@ public class PlayerController : MonoBehaviour {
         viewCamera = Camera.main;
     }
 
-    private void Update()
-    {
-        inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0f);
-        mousePositionInWorld = viewCamera.ScreenToWorldPoint(new Vector3 (Input.mousePosition.x, Input.mousePosition.y, viewCamera.transform.position.z));
-        player.CalculateMoveVelocity(inputVector);
-        player.TurnToward(mousePositionInWorld);
-    }
-
     private void FixedUpdate()
     {
+        inputVector = new Vector3(Input.GetAxisRaw("Horizontal"), Input.GetAxisRaw("Vertical"), 0f);
+        mousePositionInWorld = viewCamera.ScreenToWorldPoint(new Vector3(Input.mousePosition.x, Input.mousePosition.y, viewCamera.transform.position.z));
+        player.CalculateMoveVelocity(inputVector);
+        player.TurnToward(mousePositionInWorld);
         player.Move();
     }
 }
