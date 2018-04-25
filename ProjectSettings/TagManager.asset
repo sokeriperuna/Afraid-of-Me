@@ -43,6 +43,9 @@ TagManager:
   - name: Floor
     uniqueID: 77628663
     locked: 0
+  - name: Potions
+    uniqueID: 2692255315
+    locked: 0
   - name: Walls
     uniqueID: 2247860613
     locked: 0

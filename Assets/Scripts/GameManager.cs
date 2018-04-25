@@ -5,6 +5,8 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
+    public PotionScript[] potions;
+
 	void Awake(){
 		ExitTile.OnPlayerEnter += PlayerVictory;
         PlayerEntity.playerFailure += PlayerFailure;

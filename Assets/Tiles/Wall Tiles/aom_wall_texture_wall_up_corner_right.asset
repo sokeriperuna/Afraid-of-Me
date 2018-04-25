@@ -11,7 +11,7 @@ MonoBehaviour:
   m_Script: {fileID: 13312, guid: 0000000000000000e000000000000000, type: 0}
   m_Name: aom_wall_texture_wall_up_corner_right
   m_EditorClassIdentifier: 
-  m_Sprite: {fileID: 21300000, guid: ceddd8d4c266f5943bf0668c7c83a74d, type: 3}
+  m_Sprite: {fileID: 21300000, guid: f4031b65cf039b742956520eb9bb23c0, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Transform:
     e00: 1
