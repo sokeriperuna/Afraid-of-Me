@@ -1,8 +1,7 @@
 fileFormatVersion: 2
-guid: 86c80ee61aac66f43b1f224c2257f6b1
+guid: 0926d889d7219f34ea6d8f3002d01a64
 TextureImporter:
-  fileIDToRecycleName:
-    21300000: aom_element_3_0
+  fileIDToRecycleName: {}
   externalObjects: {}
   serializedVersion: 5
   mipmaps:
@@ -39,12 +38,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 2
+  spriteMode: 1
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 128
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -81,31 +80,11 @@ TextureImporter:
     androidETC2FallbackOverride: 0
   spriteSheet:
     serializedVersion: 2
-    sprites:
-    - serializedVersion: 2
-      name: aom_element_3_0
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 16
-        width: 33
-        height: 43
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f8302fc520afaf5439719cd74b59a3e1
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
+    sprites: []
     outline: []
     physicsShape: []
     bones: []
-    spriteID: 4087712c53ba12947b064cbd65459c67
+    spriteID: 5de128f74cfbe5a45a3cbc6424352d7e
     vertices: []
     indices: 
     edges: []

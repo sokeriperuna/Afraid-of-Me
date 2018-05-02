@@ -5,19 +5,17 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
-<<<<<<< HEAD
 	public Potion[] potions;
 
 	private int collectedPotionCount;
-=======
-    public PotionScript[] potions;
->>>>>>> parent of 2d23318... Minor changes
 
 	void Awake(){
+        collectedPotionCount = 0;
 		ExitTile.OnPlayerEnter += PlayerVictory;
         PlayerEntity.playerFailure += PlayerFailure;
 		foreach (Potion potion in potions) 
 		{
+            Debug.Log("Potion Test");
 			potion.PotionCollectEvent += OnPotionCollect;
 		}
 	}
@@ -25,8 +23,8 @@ public class GameManager : MonoBehaviour {
 	void OnPotionCollect()
 	{
 		collectedPotionCount++;
-		if (collectedPotionCount >= potions.Length)
-			PlayerVictory ();
+        if (collectedPotionCount >= potions.Length) ;
+			//PlayerVictory ();
 	}
 
 	void PlayerVictory(){

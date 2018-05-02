@@ -14,6 +14,8 @@ public class Potion : MonoBehaviour {
 		{
 			if (PotionCollectEvent != null)
 				PotionCollectEvent ();
+
+            gameObject.SetActive(false);
 		}
 	}
 }
