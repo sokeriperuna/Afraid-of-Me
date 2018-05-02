@@ -5,9 +5,13 @@ using UnityEngine.SceneManagement;
 
 public class GameManager : MonoBehaviour {
 
+<<<<<<< HEAD
 	public Potion[] potions;
 
 	private int collectedPotionCount;
+=======
+    public PotionScript[] potions;
+>>>>>>> parent of 2d23318... Minor changes
 
 	void Awake(){
 		ExitTile.OnPlayerEnter += PlayerVictory;
