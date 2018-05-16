@@ -836,7 +836,7 @@ TilemapRenderer:
   m_ReflectionProbeUsage: 0
   m_RenderingLayerMask: 4294967295
   m_Materials:
-  - {fileID: 2100000, guid: 7da5797f7ff734c4ca088c9eb62ebad0, type: 2}
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26468,7 +26468,7 @@ Tilemap:
   - m_RefCount: 2835
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_Color: {r: 0.4339623, g: 0.22312212, b: 0.2711347, a: 1}
   m_Origin: {x: -23, y: -2, z: 0}
   m_Size: {x: 46, y: 64, z: 1}
   m_TileAnchor: {x: 0.5, y: 0.5, z: 0}

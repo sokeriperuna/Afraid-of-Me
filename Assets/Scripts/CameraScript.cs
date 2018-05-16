@@ -15,6 +15,7 @@ public class CameraScript : MonoBehaviour {
     {
         videoPlayer = GetComponent<VideoPlayer>();
         PlayerEntity.playerFailure += PlayJumpscare;
+        GameManager.
     }
 
     private void PlayJumpscare()
