@@ -180,6 +180,9 @@ GameObject:
 --- !u!114 &185835054
 MonoBehaviour:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 504d149... Level design added
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -432,6 +435,7 @@ MonoBehaviour:
   player: {fileID: 1796960917}
   potions: []
 --- !u!1 &839000989
+<<<<<<< HEAD
 =======
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -478,6 +482,8 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &191729480
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+>>>>>>> parent of 504d149... Level design added
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -485,12 +491,16 @@ GameObject:
   serializedVersion: 5
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 504d149... Level design added
   - component: {fileID: 839000994}
   - component: {fileID: 839000993}
   - component: {fileID: 839000992}
   - component: {fileID: 839000991}
   - component: {fileID: 839000990}
   - component: {fileID: 839000995}
+<<<<<<< HEAD
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -503,11 +513,19 @@ GameObject:
   m_Name: Potion (4)
   m_TagString: Untagged
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+  m_Layer: 0
+  m_Name: Main Camera
+  m_TagString: MainCamera
+>>>>>>> parent of 504d149... Level design added
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 504d149... Level design added
 --- !u!81 &839000990
 AudioListener:
   m_ObjectHideFlags: 0
@@ -580,6 +598,7 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &839000995
 MonoBehaviour:
+<<<<<<< HEAD
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -695,6 +714,38 @@ Transform:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
+=======
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 839000989}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 43672017812620d4e80f3f6d4726a130, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  target: {fileID: 1468511155}
+--- !u!1 &939864948
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 939864949}
+  m_Layer: 0
+  m_Name: Nodes (1)
+  m_TagString: Untagged
+  m_Icon: {fileID: -982381405332843317, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &939864949
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+>>>>>>> parent of 504d149... Level design added
   m_GameObject: {fileID: 939864948}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 7.5, y: 2, z: 0}
@@ -704,6 +755,7 @@ Transform:
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &949558593
+<<<<<<< HEAD
 =======
   m_GameObject: {fileID: 191729480}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -791,6 +843,8 @@ Prefab:
   m_IsPrefabParent: 0
 --- !u!1 &638510236
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+>>>>>>> parent of 504d149... Level design added
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -798,11 +852,15 @@ GameObject:
   serializedVersion: 5
   m_Component:
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 504d149... Level design added
   - component: {fileID: 949558594}
   - component: {fileID: 949558596}
   - component: {fileID: 949558595}
   m_Layer: 0
   m_Name: Tilemap_base
+<<<<<<< HEAD
 =======
   - component: {fileID: 638510240}
   - component: {fileID: 638510239}
@@ -812,12 +870,17 @@ GameObject:
   m_Layer: 5
   m_Name: UI Canvas
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+>>>>>>> parent of 504d149... Level design added
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 504d149... Level design added
 --- !u!4 &949558594
 Transform:
   m_ObjectHideFlags: 0
@@ -838,6 +901,7 @@ TilemapRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 949558593}
   m_Enabled: 1
+<<<<<<< HEAD
 =======
 --- !u!114 &638510237
 MonoBehaviour:
@@ -1239,6 +1303,8 @@ TilemapRenderer:
   m_GameObject: {fileID: 949558593}
   m_Enabled: 1
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+>>>>>>> parent of 504d149... Level design added
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -1248,10 +1314,14 @@ TilemapRenderer:
   m_RenderingLayerMask: 4294967295
   m_Materials:
 <<<<<<< HEAD
+<<<<<<< HEAD
   - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
 =======
   - {fileID: 2100000, guid: 7da5797f7ff734c4ca088c9eb62ebad0, type: 2}
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+>>>>>>> parent of 504d149... Level design added
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -26884,6 +26954,7 @@ Tilemap:
     m_Data: {r: 1, g: 1, b: 1, a: 1}
   m_AnimationFrameRate: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -23, y: -2, z: 0}
   m_Size: {x: 46, y: 64, z: 1}
@@ -26923,6 +26994,8 @@ GameObject:
   m_IsActive: 1
 --- !u!4 &1027019817
 =======
+=======
+>>>>>>> parent of 504d149... Level design added
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_Origin: {x: -23, y: -2, z: 0}
   m_Size: {x: 46, y: 64, z: 1}
@@ -26946,6 +27019,7 @@ GameObject:
     e32: 0
     e33: 1
 --- !u!1 &1027019816
+<<<<<<< HEAD
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -26960,6 +27034,47 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!4 &1027019817
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1027019816}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -7.5, y: 2, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1808654172}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1065409018
+=======
+>>>>>>> parent of 504d149... Level design added
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+<<<<<<< HEAD
+  - component: {fileID: 1065409022}
+  - component: {fileID: 1065409021}
+  - component: {fileID: 1065409020}
+  - component: {fileID: 1065409019}
+  m_Layer: 0
+  m_Name: Potion (3)
+=======
+  - component: {fileID: 1027019817}
+  m_Layer: 0
+  m_Name: Nodes(0)
+>>>>>>> parent of 504d149... Level design added
+  m_TagString: Untagged
+  m_Icon: {fileID: -982381405332843317, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+<<<<<<< HEAD
+=======
 --- !u!4 &1027019817
 Transform:
   m_ObjectHideFlags: 0
@@ -26991,6 +27106,7 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+>>>>>>> parent of 504d149... Level design added
 --- !u!114 &1065409019
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -27004,6 +27120,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!61 &1065409020
 BoxCollider2D:
+<<<<<<< HEAD
+=======
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
@@ -27029,11 +27147,40 @@ BoxCollider2D:
   m_EdgeRadius: 0
 --- !u!212 &1065409021
 SpriteRenderer:
+>>>>>>> parent of 504d149... Level design added
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1065409018}
   m_Enabled: 1
+<<<<<<< HEAD
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 0.33, y: 0.43}
+    newSize: {x: 0.33, y: 0.43}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 0.33, y: 0.43}
+  m_EdgeRadius: 0
+--- !u!212 &1065409021
+SpriteRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1065409018}
+  m_Enabled: 1
+=======
+>>>>>>> parent of 504d149... Level design added
   m_CastShadows: 0
   m_ReceiveShadows: 0
   m_DynamicOccludee: 1
@@ -27073,11 +27220,15 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 --- !u!4 &1065409022
+<<<<<<< HEAD
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+>>>>>>> parent of 504d149... Level design added
 Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
 <<<<<<< HEAD
   m_GameObject: {fileID: 1027019816}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
@@ -27089,22 +27240,31 @@ Transform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1065409018
 =======
+=======
+>>>>>>> parent of 504d149... Level design added
   m_GameObject: {fileID: 1065409018}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -1.03, y: -2.9, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
+<<<<<<< HEAD
   m_RootOrder: 12
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1205191598
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+  m_RootOrder: 13
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1205191598
+>>>>>>> parent of 504d149... Level design added
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - component: {fileID: 1065409022}
   - component: {fileID: 1065409021}
@@ -27113,17 +27273,24 @@ GameObject:
   m_Layer: 0
   m_Name: Potion (3)
 =======
+=======
+>>>>>>> parent of 504d149... Level design added
   - component: {fileID: 1205191599}
   - component: {fileID: 1205191601}
   - component: {fileID: 1205191600}
   m_Layer: 5
+<<<<<<< HEAD
   m_Name: Potions Collected Text
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+  m_Name: Potions Left Text
+>>>>>>> parent of 504d149... Level design added
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+<<<<<<< HEAD
 <<<<<<< HEAD
 --- !u!114 &1065409019
 MonoBehaviour:
@@ -27222,6 +27389,8 @@ Transform:
 --- !u!1 &1205191598
 =======
 --- !u!224 &1205191599
+=======
+--- !u!224 &1205191599
 RectTransform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
@@ -27271,6 +27440,105 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
+  m_Text: '
+
+
+'
+--- !u!222 &1205191601
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1205191598}
+--- !u!1 &1247650584
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+  - component: {fileID: 1247650585}
+  - component: {fileID: 1247650587}
+  - component: {fileID: 1247650586}
+  m_Layer: 5
+  m_Name: MB text
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1247650585
+>>>>>>> parent of 504d149... Level design added
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1205191598}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+=======
+  m_GameObject: {fileID: 1247650584}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+>>>>>>> parent of 504d149... Level design added
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 638510240}
+<<<<<<< HEAD
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 1}
+  m_AnchorMax: {x: 0, y: 1}
+  m_AnchoredPosition: {x: 125, y: -15}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1205191600
+=======
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 1, y: 1}
+  m_AnchorMax: {x: 1, y: 1}
+  m_AnchoredPosition: {x: -125, y: -15}
+  m_SizeDelta: {x: 160, y: 30}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!114 &1247650586
+>>>>>>> parent of 504d149... Level design added
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
+  m_GameObject: {fileID: 1205191598}
+=======
+  m_GameObject: {fileID: 1247650584}
+>>>>>>> parent of 504d149... Level design added
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 708705254, guid: f70555f144d8491a825f0804e09c671c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
+  m_RaycastTarget: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+    m_TypeName: UnityEngine.UI.MaskableGraphic+CullStateChangedEvent, UnityEngine.UI,
+      Version=1.0.0.0, Culture=neutral, PublicKeyToken=null
+  m_FontData:
+    m_Font: {fileID: 10102, guid: 0000000000000000e000000000000000, type: 0}
+    m_FontSize: 14
+    m_FontStyle: 0
+    m_BestFit: 0
+    m_MinSize: 10
+    m_MaxSize: 40
+    m_Alignment: 0
+    m_AlignByGeometry: 0
+    m_RichText: 1
+    m_HorizontalOverflow: 0
+    m_VerticalOverflow: 0
+    m_LineSpacing: 1
+<<<<<<< HEAD
   m_Text: "Potions collected: \n\n"
 --- !u!222 &1205191601
 CanvasRenderer:
@@ -27390,6 +27658,46 @@ CanvasRenderer:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1205191598}
 --- !u!1 &1247650584
+=======
+  m_Text: 'MB: 0'
+--- !u!222 &1247650587
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1247650584}
+--- !u!1 &1365951550 stripped
+GameObject:
+  m_PrefabParentObject: {fileID: 1591794247261100, guid: 5d48a8d2dbc16d141b7b2738bd3832c5,
+    type: 2}
+  m_PrefabInternal: {fileID: 1962077307}
+--- !u!61 &1365951553
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1365951550}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.28, y: 0.16}
+    newSize: {x: 1.28, y: 0.16}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.28, y: 0.16}
+  m_EdgeRadius: 0
+--- !u!1 &1405819014
+>>>>>>> parent of 504d149... Level design added
 GameObject:
 =======
   m_Text: 'MB: 0'
@@ -27408,6 +27716,7 @@ GameObject:
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - component: {fileID: 1247650585}
   - component: {fileID: 1247650587}
@@ -27664,12 +27973,7 @@ Animator:
   m_KeepAnimatorControllerStateOnDisable: 0
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
 --- !u!1 &1405819014
-GameObject:
-  m_ObjectHideFlags: 0
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 0}
-  serializedVersion: 5
-  m_Component:
+=======
   - component: {fileID: 1405819015}
   m_Layer: 0
   m_Name: Nodes (3)
@@ -27683,6 +27987,51 @@ Transform:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
+  m_GameObject: {fileID: 1405819014}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -6.5, y: -1, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1808654172}
+  m_RootOrder: 3
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &1468511155 stripped
+Transform:
+  m_PrefabParentObject: {fileID: 4164022876019922, guid: 3793c1593a7d3194396e6bf6b4e3d18e,
+    type: 2}
+  m_PrefabInternal: {fileID: 629629486}
+--- !u!1 &1534565717
+>>>>>>> parent of 504d149... Level design added
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+  serializedVersion: 5
+  m_Component:
+<<<<<<< HEAD
+  - component: {fileID: 1405819015}
+  m_Layer: 0
+  m_Name: Nodes (3)
+=======
+  - component: {fileID: 1534565718}
+  m_Layer: 0
+  m_Name: Nodes (2)
+>>>>>>> parent of 504d149... Level design added
+  m_TagString: Untagged
+  m_Icon: {fileID: -982381405332843317, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+<<<<<<< HEAD
+--- !u!4 &1405819015
+=======
+--- !u!4 &1534565718
+>>>>>>> parent of 504d149... Level design added
+Transform:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
+<<<<<<< HEAD
   m_GameObject: {fileID: 1405819014}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: -6.5, y: -1, z: 0}
@@ -27729,12 +28078,24 @@ Transform:
 =======
 --- !u!1 &1632156837
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+  m_GameObject: {fileID: 1534565717}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 6, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 1808654172}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1574288047
+>>>>>>> parent of 504d149... Level design added
 GameObject:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   serializedVersion: 5
   m_Component:
+<<<<<<< HEAD
 <<<<<<< HEAD
   - component: {fileID: 1574288050}
   - component: {fileID: 1574288049}
@@ -27749,12 +28110,22 @@ GameObject:
   m_Layer: 0
   m_Name: Potion (0)
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+  - component: {fileID: 1574288050}
+  - component: {fileID: 1574288049}
+  - component: {fileID: 1574288048}
+  m_Layer: 0
+  m_Name: aom_walking_mirror_0
+>>>>>>> parent of 504d149... Level design added
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 504d149... Level design added
 --- !u!95 &1574288048
 Animator:
   serializedVersion: 3
@@ -27774,6 +28145,7 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorControllerStateOnDisable: 0
 --- !u!212 &1574288049
+<<<<<<< HEAD
 =======
 --- !u!114 &1632156838
 MonoBehaviour:
@@ -27788,15 +28160,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
 --- !u!212 &1632156839
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+>>>>>>> parent of 504d149... Level design added
 SpriteRenderer:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_GameObject: {fileID: 1574288047}
 =======
   m_GameObject: {fileID: 1632156837}
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+  m_GameObject: {fileID: 1574288047}
+>>>>>>> parent of 504d149... Level design added
   m_Enabled: 1
   m_CastShadows: 0
   m_ReceiveShadows: 0
@@ -27824,6 +28202,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
@@ -27834,20 +28213,33 @@ SpriteRenderer:
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: 4c16ccc03a148ec438c986945e9cf5e2, type: 3}
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+  m_SortingLayerID: 0
+  m_SortingLayer: 0
+  m_SortingOrder: 0
+  m_Sprite: {fileID: 21300000, guid: f2ccae2595a17ef47828b8474532eadb, type: 3}
+>>>>>>> parent of 504d149... Level design added
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_Size: {x: 1, y: 0.2421875}
 =======
   m_Size: {x: 0.33, y: 0.43}
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+  m_Size: {x: 1, y: 0.2421875}
+>>>>>>> parent of 504d149... Level design added
   m_AdaptiveModeThreshold: 0.5
   m_SpriteTileMode: 0
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 504d149... Level design added
 --- !u!4 &1574288050
 Transform:
   m_ObjectHideFlags: 0
@@ -27881,15 +28273,21 @@ GameObject:
   m_IsActive: 1
 --- !u!114 &1632156838
 MonoBehaviour:
+<<<<<<< HEAD
 =======
 --- !u!4 &1632156840
 Transform:
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+>>>>>>> parent of 504d149... Level design added
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1632156837}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 504d149... Level design added
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: cc2ce869ed777194eaae562cf832e752, type: 3}
@@ -27972,8 +28370,11 @@ BoxCollider2D:
   m_PrefabInternal: {fileID: 0}
   m_GameObject: {fileID: 1632156837}
   m_Enabled: 1
+<<<<<<< HEAD
 =======
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+>>>>>>> parent of 504d149... Level design added
   m_Density: 1
   m_Material: {fileID: 0}
   m_IsTrigger: 1
@@ -28103,10 +28504,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 11
 =======
   m_RootOrder: 10
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+  m_RootOrder: 11
+>>>>>>> parent of 504d149... Level design added
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1734695844
 GameObject:
@@ -28219,10 +28624,14 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
   m_RootOrder: 12
 =======
   m_RootOrder: 11
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+  m_RootOrder: 12
+>>>>>>> parent of 504d149... Level design added
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1796960917 stripped
 MonoBehaviour:
@@ -28304,6 +28713,9 @@ Transform:
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> parent of 504d149... Level design added
 --- !u!1001 &1962077307
 Prefab:
   m_ObjectHideFlags: 0
@@ -28425,8 +28837,11 @@ Prefab:
     - {fileID: 61678410792470442, guid: 5d48a8d2dbc16d141b7b2738bd3832c5, type: 2}
   m_ParentPrefab: {fileID: 100100000, guid: 5d48a8d2dbc16d141b7b2738bd3832c5, type: 2}
   m_IsPrefabParent: 0
+<<<<<<< HEAD
 =======
 >>>>>>> 44ea2df88dc318ba9a14119d3dda57de3c615d07
+=======
+>>>>>>> parent of 504d149... Level design added
 --- !u!1 &2140245560
 GameObject:
   m_ObjectHideFlags: 0
