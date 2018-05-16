@@ -14,13 +14,25 @@ public class MirrorObject : MonoBehaviour
 
     public bool moving;
     public float moveSpeed;
+    public float turnSpeed;
     public MirrorPath mirrorPath;
 
     private bool movingInPositiveDirection;
+
     private float startTime;
     private float journeyLength;
+
     private int currentIndex;
     private int targetIndex;
+
+    private Vector3 lastPosition;
+
+    private Rigidbody2D rb;
+
+    private void Awake()
+    {
+        rb = GetComponent<Rigidbody2D>();
+    }
 
     private void Start()
     {
@@ -40,7 +52,12 @@ public class MirrorObject : MonoBehaviour
         if (moving && mirrorPath.nodes.Length >= 2)
         {
             Lerp();
+
+            Vector3 movementDelta = lastPosition - transform.position;
+            TurnToward(transform.position - movementDelta);
         }
+
+        lastPosition = transform.position;
     }
 
     void Lerp()
@@ -52,6 +69,13 @@ public class MirrorObject : MonoBehaviour
                                           fracJourney);
         if (fracJourney >= 1f)
             SetNextTarget();
+    }
+
+    public void TurnToward(Vector3 target)
+    {
+        Quaternion newRotation = new Quaternion();
+        newRotation.eulerAngles = new Vector3(0f, 0f, rb.rotation + Vector2.SignedAngle(transform.up, target - transform.position) * turnSpeed * Time.fixedDeltaTime);
+        transform.rotation = newRotation;
     }
 
     void SetNextTarget()

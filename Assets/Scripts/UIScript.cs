@@ -6,29 +6,29 @@ using UnityEngine.UI;
 public class UIScript : MonoBehaviour {
 
     public Text mirrorBufferText;
-    public Text potionsLeftText;
+    public Text potionsCollectedText;
     public PlayerEntity player;
 
     public Potion[] potions;
 
-    private int potionsLeft;
+    public int potionsCollected;
 
-    private void Awake()
+    private void Start()
     {
-        potionsLeft = 0;
+        potionsCollected = 0;
         player.mirrorBufferUpdated += UpdateMirrorBufferText;
         foreach (Potion potion in potions)
         {
             potion.PotionCollectEvent += OnPotionCollect;
-            potionsLeft++;
-            potionsLeftText.text = ("Potions left: " + potionsLeft);
         }
+
+        potionsCollectedText.text = ("Potions collected: " + potionsCollected.ToString() + "/" + potions.Length.ToString());
     }
 
     void OnPotionCollect()
     {
-        potionsLeft--;
-        potionsLeftText.text = ("Potions left: " + potionsLeft);
+        potionsCollected++;
+        potionsCollectedText.text = ("Potions collected: " + potionsCollected.ToString() + "/" + potions.Length.ToString());
     }
 
     void UpdateMirrorBufferText()
