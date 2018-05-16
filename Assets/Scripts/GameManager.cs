@@ -9,13 +9,15 @@ public class GameManager : MonoBehaviour {
 
 	private int collectedPotionCount;
 
+    public delegate void GameManagerDelegate();
+    public static event GameManagerDelegate playerVictoryEvent;
+
 	void Awake(){
         collectedPotionCount = 0;
 		ExitTile.OnPlayerEnter += PlayerVictory;
         PlayerEntity.playerFailure += PlayerFailure;
 		foreach (Potion potion in potions) 
-		{
-            Debug.Log("Potion Test");
+		{   
 			potion.PotionCollectEvent += OnPotionCollect;
 		}
 	}
@@ -24,15 +26,17 @@ public class GameManager : MonoBehaviour {
 	{
 		collectedPotionCount++;
         if (collectedPotionCount >= potions.Length) ;
-			//PlayerVictory ();
+			PlayerVictory ();
 	}
 
 	void PlayerVictory(){
-		SceneManager.LoadScene("Main");
+        //SceneManager.LoadScene("Main");
+        if (playerVictoryEvent != null)
+            playerVictoryEvent();
 	}
 
     void PlayerFailure()
     {
-        SceneManager.LoadScene("Main");
+        //SceneManager.LoadScene("Main");
     }
 }

@@ -12,8 +12,9 @@ public class Potion : MonoBehaviour {
 	{
 		if (other.CompareTag ("Player")) 
 		{
-			if (PotionCollectEvent != null)
-				PotionCollectEvent ();
+            if (PotionCollectEvent != null)
+                PotionCollectEvent();
+
 
             gameObject.SetActive(false);
 		}
